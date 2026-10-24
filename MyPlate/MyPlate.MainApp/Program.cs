@@ -10,7 +10,9 @@ class Program
         int cheeseCalories = 250;
         int doughCalories = 270;
         int tomatoCalories = 80;
+        int pepperoniCalories = 500;
         int bolgarianPepperCalories = 20;
+
         Console.WriteLine("Выберите пиццу: ");
         Console.WriteLine("1 — Маргарита");
         Console.WriteLine("2 — Пепперони");
