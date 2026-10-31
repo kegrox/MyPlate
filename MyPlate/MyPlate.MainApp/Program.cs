@@ -1,11 +1,13 @@
-﻿namespace MyPlate.MainApp;
+﻿using System;
+using MyPlate.Data;
+
+namespace MyPlate.MainApp;
 
 class Program
 {
     static void Main(string[] args)
     {
         // моцарелла, 100г
-        int cheeseCalories = 250;
         int doughCalories = 270;
         int tomatoCalories = 80;
         int pepperoniCalories = 500;
@@ -69,7 +71,7 @@ class Program
                     pizzaDoughGram = pizzaMass * doughRatio;
                     pizzaCheeseGram = pizzaMass * cheeseRatio;
                     pizzaTomatoGram = pizzaMass * tomatoRatio;
-                    cheeseCaloriesInPizza = (pizzaCheeseGram / 100 * cheeseCalories);
+                    cheeseCaloriesInPizza = (pizzaCheeseGram / 100 * CaloriesData.CheeseCalories);
                     doughCaloriesInPizza = (pizzaDoughGram / 100 * doughCalories);
                     tomatoCaloriesInPizza = (pizzaTomatoGram / 100 * tomatoCalories);
                     pizzaCalories = cheeseCaloriesInPizza + doughCaloriesInPizza + tomatoCaloriesInPizza;
@@ -86,7 +88,7 @@ class Program
                     pizzaDoughGram = pizzaMass * doughRatio;
                     pizzaCheeseGram = pizzaMass * cheeseRatio;
                     pizzaPepperoniGram = pizzaMass * pepperoniRatio;
-                    cheeseCaloriesInPizza = (pizzaCheeseGram / 100 * cheeseCalories);
+                    cheeseCaloriesInPizza = (pizzaCheeseGram / 100 * CaloriesData.CheeseCalories);
                     doughCaloriesInPizza = (pizzaDoughGram / 100 * doughCalories);
                     pepperoniCaloriesInPizza = (pizzaPepperoniGram / 100 * pepperoniCalories);
                     pizzaCalories = cheeseCaloriesInPizza + doughCaloriesInPizza + pepperoniCaloriesInPizza;
@@ -103,7 +105,7 @@ class Program
                     pizzaDoughGram = pizzaMass * doughRatio;
                     pizzaCheeseGram = pizzaMass * cheeseRatio;
                     pizzaBolgarianPepperGram = pizzaMass * bolgarianPepperRatio;
-                    cheeseCaloriesInPizza = (pizzaCheeseGram / 100 * cheeseCalories);
+                    cheeseCaloriesInPizza = (pizzaCheeseGram / 100 * CaloriesData.CheeseCalories);
                     doughCaloriesInPizza = (pizzaDoughGram / 100 * doughCalories);
                     bolgarianPepperCaloriesInPizza = (pizzaBolgarianPepperGram / 100 * bolgarianPepperCalories);
                     pizzaCalories = cheeseCaloriesInPizza + doughCaloriesInPizza + bolgarianPepperCaloriesInPizza;
