@@ -7,4 +7,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+        <ProjectReference Include="..\MyPlate.Data\MyPlate.Data.csproj"/>
+    </ItemGroup>
+
 </Project>
